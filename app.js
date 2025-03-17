@@ -25,9 +25,9 @@ function resultlist() //Mostrar el listado de herrameintas
     lista.innerHTML = ""; // Limpiar lista antes de actualizar
 
     for (index=0; index < friendslist.length; index++){
-        let li = document.createElement("li");
-        li.textContent = friendslist[index]; // Agrega índice y nombre
-        lista.appendChild(li);
+        let li = document.createElement("li"); // Crear elemento para listados
+        li.textContent = friendslist[index]; // Nombre de acuerdo al indice
+        lista.appendChild(li); //Agrega el elemento al arreglo
     }
 }
 
